@@ -1,0 +1,129 @@
+* {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .fade-in {
+    opacity: 0;
+    animation: fadeInSmooth 2.5s ease-out forwards;
+  }
+  
+  @keyframes fadeInSmooth {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes logo-bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.4; /* 🔼 artırdık */
+    filter: brightness(1) saturate(1.2);
+  }
+  
+  
+  .home-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  
+    background-color: rgba(140, 179, 105, 0.3); /* 🔽 saydamlık artırıldı */
+    backdrop-filter: blur(3px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    
+  }
+
+  .home-header {
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+    margin-bottom: 30px; 
+    
+  }
+
+  .home-logo {
+    width: 150px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+    animation: logo-bounce 2s infinite;
+  }
+  
+  .home-title-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+  }
+  
+  .home-title {
+    color: white;
+    font-size: 64px;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #cccccc; 
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+  }
+  
+  .home-buttons {
+    display: flex;
+    gap: 35px;
+    
+  }
+  
+  .home-button {
+    background-color: #a5a5a5;
+    border: 1px solid #a5a5a5;
+    padding: 20px 40px;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .home-button:hover {
+    background-color: #7f7f7f;
+    transform: scale(1.05);
+  }
+
+  .button-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  

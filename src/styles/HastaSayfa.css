@@ -1,0 +1,243 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.hasta-panel {
+  display: flex;
+  height: 100vh;
+  background-color: #a6c48a;
+  position: relative;
+}
+
+/* Sol panel */
+.sol-panel {
+  flex: 1;
+  background-color: #a6c48a;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  max-width: 300px; /* sabit genişlik vererek sola yapışmasını önler */
+  margin: 0 auto;   /* ortalar */
+}
+
+.tarih-header {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #50623a;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.profil-kart {
+  border: 5px solid white;
+  padding: 20px;
+  width: 90%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.profil-kart li {
+  font-size: 18px;
+}
+
+.profil-icon {
+  font-size: 10px;
+  margin-bottom: 20px;
+  width: 30vh;
+}
+
+.profil-kart ul {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.buton-satir {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-start; /* ❗ sola hizalama */
+}
+
+.buton-kapsayici {
+  display: flex;
+  justify-content: flex-end; /* 🔥 sağa hizalama */
+  margin-top: 20px;
+}
+
+
+.rapor-btn {
+  background-color: #dde5b6;
+  color: #2e2e2e;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  
+  margin-left: 0;
+  margin-right: 0;
+
+  width: 100%;
+  max-width: 250px; /* input kutularıyla aynı hizada */
+  height: 45px;
+}
+
+
+
+/* Orta panel */
+.orta-panel {
+  flex: 3;
+  padding: 40px;
+  background-color: #a6c48a;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+   position: relative;
+  max-width: 900px; /* ekran ne kadar büyük olursa olsun bu genişlikte sabit kalır */
+  width: 100%;
+  margin: 0 auto;   /* ortalar */
+}
+
+.ogun-blok {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.ogun-satir {
+  display: flex;
+  align-items: center;
+ gap: 16px;
+  
+}
+
+.ogun-baslik {
+  font-size: 16px;
+  background-color: #50623a;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.ogun-kutu {
+  width: 500px; /* eski: flex: 1 */
+  height: 40px;
+  margin-left: 0;
+  background: linear-gradient(145deg, #f1faee, #f1faee);
+  border-radius: 25px;
+  box-shadow: none;
+  padding: 10px;
+  border: none;
+}
+
+/* Çıkış butonu sağ üst */
+.logout-btn {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Chatbot simgesi sağ alt */
+.chatbot-kutu {
+  position: absolute;
+  bottom: 20px;
+  right: 25px;
+  font-style: italic;
+  font-weight: bold;
+  color: #2e2e2e;
+  background-color: #dde5b6;
+  padding: 10px 15px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 🔽 GPT destekli Chatbot paneli */
+.chatbot-container {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f4f8ed;
+  border: 2px solid #d0dfb4;
+  border-radius: 16px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+    max-height: 350px;
+  overflow: hidden;
+}
+
+.chat-history {
+  height: 250px;
+  overflow-y: auto;
+  padding: 10px;
+  background: #f0f0f0;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chat-bubble {
+  padding: 10px 14px;
+  border-radius: 16px;
+  max-width: 75%;
+  white-space: pre-wrap;
+}
+
+.chat-bubble.user {
+  align-self: flex-end;
+  background-color: #d9fdd3;
+  text-align: right;
+}
+
+.chat-bubble.bot {
+  align-self: flex-start;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.chat-input-blok {
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input {
+  flex: 1;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px;
+  resize: none;
+  font-size: 14px;
+}
+
+.chat-button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #6abf69;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.chat-button:hover {
+  background-color: #52a653;
+}
+

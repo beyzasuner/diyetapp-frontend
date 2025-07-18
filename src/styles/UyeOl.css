@@ -1,0 +1,139 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+@keyframes logo-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.4;
+  filter: brightness(1) saturate(1.2);
+}
+
+.uyeol-container {
+  display: flex;
+   justify-content: center; /* ✨ formu yatayda ortalar */
+  align-items: center;    
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  background-color: rgba(151, 177, 128, 0.3);
+  backdrop-filter: blur(3px);
+  border-radius: 30px;
+  padding: 50px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.uye-left {
+  flex: 1;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.uye-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+.uye-logo {
+  width: 250px;
+  margin-bottom: 20px;
+  animation: logo-bounce 2s infinite;
+}
+
+.uye-baslik {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
+.uye-form {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 35px;
+  border-radius: 16px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+   margin-left: auto;
+  margin-right: auto;
+}
+
+.uye-form label {
+  font-weight: 600;
+}
+
+.uye-form input,
+.uye-form select {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #f1c25d;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.uye-form input:focus,
+.uye-form select:focus {
+  border-color: #8cb369;
+  box-shadow: 0 0 5px rgba(140, 179, 105, 0.5);
+}
+
+.uye-form button {
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.uye-form button:hover {
+  background: linear-gradient(to right, #e6e6e6, #ccc);
+  transform: scale(1.05);
+}
+
+.uye-giris-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.giris-link-metni {
+  color: #3b6cb7;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.giris-link-metni:hover {
+  color: #1f4aa0;
+}
